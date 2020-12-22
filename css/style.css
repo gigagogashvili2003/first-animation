@@ -1,0 +1,103 @@
+body {
+    background-image: url(../images/universe.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.earth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -50px;
+    right: -1200px;
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    background-image: url(../images/earth.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -20px -15px 20px black inset;
+    animation: earthmove 30s linear  infinite;
+} 
+
+.sun {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url(../images/sun.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: sunmove 30s linear infinite;
+    box-shadow: -30px -15px 30px black inset;
+}
+
+.moon {
+    position: absolute;
+    top: -250px;
+    left: 1200px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(../images/moon.webp);
+    background-repeat: no-repeat;
+    box-shadow: -15px -15px 20px black inset;
+    animation: moonmove 30s linear infinite;
+    
+}
+
+.orbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    box-shadow: -10px -10px 15px black inset;
+    background-size: 10px;
+    
+   
+}
+
+
+
+
+
+
+/* keyframe animations */
+
+@keyframes earthmove {
+    0% {background-position: 100%;;}
+   90% {transform: translate(-1000px, -200px);}
+   100% {transform: translate(0px, 0px);}
+
+}
+
+@keyframes sunmove {
+    100% {background-position: 100%;}
+
+}
+
+
+
+@keyframes moonmove {
+    0% {background-position: 100%;;}
+   90% {transform: translate(-1000px, -200px);}
+   100% {transform: translate(0px, 0px);}
+
+}
+
+
+
